@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+body {
+    background-color: #324237;
+    font-family: 'Exo 2' , sans-serif;
+}
+
+#page {
+    width:80%;
+    margin: auto;
+    
+}
+
+#container {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20%;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    background-color: #343536;
+    box-sizing: border-box;
+    border-radius: 5%;
+    border: 4px solid #222324;
+
+}
+#display {
+    background-color: #c4bdbc;
+    text-align: right;
+    font-size: 48px;
+    margin: 20px;
+    height: 60px;
+    width: 250px;
+    border: 4px solid #222324;
+    box-shadow: 0 2px 0 2px #222324;
+
+}
+#buttonGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px 10px;
+    margin: 0px 20px 20px 20px;
+  }
+
+#clearBtn, #backSpaceBtn {
+    grid-column: span 2;
+    background-color: #ff7f3b;
+  }
+
+
+button {
+    border-radius: 10%;
+    border: 3px solid #222324;
+    box-shadow: 0 4px #999;
+    font-size: x-large;
+}
+button:hover {
+    background-color: #c4bdbc;
+}
+button:active {
+    box-shadow: 0 1px #c4bdbc;
+    transform: translateY(3px);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 43%; 
+    color: #131a15;  
+}
